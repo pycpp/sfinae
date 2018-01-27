@@ -1,0 +1,54 @@
+#  :copyright: (c) 2017-2018 Alex Huszagh.
+#  :license: MIT, see licenses/mit.md for more details.
+
+add_headers(
+    back.h
+    emplace_back.h
+    emplace_front.h
+    front.h
+    has_bit_and.h
+    has_bit_and_assign.h
+    has_bit_or.h
+    has_bit_or_assign.h
+    has_bit_xor.h
+    has_bit_xor_assign.h
+    has_divides.h
+    has_divides_assign.h
+    has_equal_to.h
+    has_greater.h
+    has_greater_equal.h
+    has_left_shift.h
+    has_left_shift_assign.h
+    has_less.h
+    has_less_equal.h
+    has_logical_and.h
+    has_logical_or.h
+    has_member_function.h
+    has_member_type.h
+    has_member_variable.h
+    has_minus.h
+    has_minus_assign.h
+    has_modulus.h
+    has_modulus_assign.h
+    has_multiplies.h
+    has_multiplies_assign.h
+    has_not_equal_to.h
+    has_op.h
+    has_plus.h
+    has_plus_assign.h
+    has_right_shift.h
+    has_right_shift_assign.h
+    has_subscript.h
+    is_complex.h
+    is_pair.h
+    is_reference_wrapper.h
+    is_specialization.h
+    is_string.h
+    is_tuple.h
+    pop_back.h
+    pop_front.h
+    push_back.h
+    push_front.h
+    reserve.h
+    shrink_to_fit.h
+)
