@@ -17,7 +17,7 @@
  *          void operator()(T& t);
  *      };
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool has_pop_back_v = implementation-defined;
@@ -60,7 +60,7 @@ struct pop_back
     }
 };
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

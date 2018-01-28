@@ -11,7 +11,7 @@
  *      template <typename T, template <typename...> class C>
  *      using is_specialization = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T, template <typename...> class C>
  *      constexpr bool is_specialization_v = implementation-defined;
@@ -48,7 +48,7 @@ struct is_specialization_impl<C<Ts...>, C>: true_type
 template <typename T, template <typename...> class C>
 using is_specialization = is_specialization_impl<remove_cv_t<remove_reference_t<T>>, C>;
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

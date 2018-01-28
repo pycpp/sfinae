@@ -10,7 +10,7 @@
  *      template <typename T>
  *      using is_pair = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool is_pair_v = implementation-defined;
@@ -30,7 +30,7 @@ PYCPP_BEGIN_NAMESPACE
 template <typename T>
 using is_pair = is_specialization<T, pair>;
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

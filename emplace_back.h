@@ -17,7 +17,7 @@
  *          void operator()(T& t, Ts&&... ts);
  *      };
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool has_emplace_back_v = implementation-defined;
@@ -64,7 +64,7 @@ struct emplace_back
     }
 };
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

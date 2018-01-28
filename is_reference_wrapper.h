@@ -10,7 +10,7 @@
  *      template <typename T>
  *      using is_reference_wrapper = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool is_reference_wrapper_v = implementation-defined;

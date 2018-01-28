@@ -10,7 +10,7 @@
  *      template <typename T, typename U>
  *      using has_right_shift_assign = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T, typename U>
  *      constexpr bool has_right_shift_assign_v = implementation-defined;
@@ -32,7 +32,7 @@ PYCPP_BEGIN_NAMESPACE
 
 PYCPP_HAS_OPERATION(right_shift_assign, >>=);
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

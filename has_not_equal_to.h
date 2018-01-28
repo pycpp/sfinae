@@ -10,7 +10,7 @@
  *      template <typename T, typename U>
  *      using has_not_equal_to = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T, typename U>
  *      constexpr bool has_not_equal_to_v = implementation-defined;
@@ -32,7 +32,7 @@ PYCPP_BEGIN_NAMESPACE
 
 PYCPP_HAS_OPERATION(not_equal_to, !=);
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

@@ -10,7 +10,7 @@
  *      template <typename T, typename U>
  *      using has_plus = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T, typename U>
  *      constexpr bool has_plus_v = implementation-defined;
@@ -32,7 +32,7 @@ PYCPP_BEGIN_NAMESPACE
 
 PYCPP_HAS_OPERATION(plus, +);
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

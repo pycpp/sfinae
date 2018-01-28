@@ -20,7 +20,7 @@
  *          typename T::const_reference operator()(const T& t);
  *      };
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool has_back_v = implementation-defined;
@@ -104,7 +104,7 @@ struct back
     }
 };
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

@@ -10,7 +10,7 @@
  *      template <typename T>
  *      using is_tuple = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool is_tuple_v = implementation-defined;
@@ -30,7 +30,7 @@ PYCPP_BEGIN_NAMESPACE
 template <typename T>
 using is_tuple = is_specialization<T, tuple>;
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

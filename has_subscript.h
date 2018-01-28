@@ -10,7 +10,7 @@
  *      template <typename C, typename I>
  *      using has_subscript = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename C, typename I>
  *      constexpr bool has_subscript_v = implementation-defined;
@@ -39,7 +39,7 @@ struct has_subscript_impl<C, I, void_t<decltype(declval<C>()[declval<I>()])>>: t
 template <typename C, typename I>
 using has_subscript = has_subscript_impl<C, I>;
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

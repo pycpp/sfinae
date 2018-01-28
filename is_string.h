@@ -37,7 +37,7 @@
  *      template <typename T>
  *      using is_string = implementation-defined;
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool is_charp_v = implementation-defined;
@@ -142,7 +142,7 @@ using is_string = integral_constant<
     is_stl_string<T>::value
 >;
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

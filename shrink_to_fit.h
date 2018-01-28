@@ -17,7 +17,7 @@
  *          void operator()(T& t);
  *      };
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool has_shrink_to_fit_v = implementation-defined;
@@ -61,7 +61,7 @@ struct shrink_to_fit
     {}
 };
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

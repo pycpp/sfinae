@@ -17,7 +17,7 @@
  *          void operator()(T& t, size_t size);
  *      };
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool has_reserve_v = implementation-defined;
@@ -63,7 +63,7 @@ struct reserve
     {}
 };
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------

@@ -17,7 +17,7 @@
  *          void operator()(T& t);
  *      };
  *
- *      #if HAVE_CPP14
+ *      #if PYCPP_CPP14
  *
  *      template <typename T>
  *      constexpr bool has_pop_front_v = implementation-defined;
@@ -62,7 +62,7 @@ struct pop_front
     }
 };
 
-#ifdef HAVE_CPP14
+#ifdef PYCPP_CPP14
 
 // SFINAE
 // ------
