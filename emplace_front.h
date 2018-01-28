@@ -27,6 +27,7 @@
 
 #pragma once
 
+#include <pycpp/preprocessor/compiler.h>
 #include <pycpp/stl/type_traits.h>
 #include <pycpp/stl/utility.h>
 
@@ -35,7 +36,15 @@ PYCPP_BEGIN_NAMESPACE
 // SFINAE
 // ------
 
-PYCPP_HAS_MEMBER_FUNCTION(emplace_front, has_emplace_front, void (C::*)(typename C::value_type&&));
+// C++17 changed the return type from `void` to `reference`.
+#if defined(PYCPP_CPP17)
+#   define PYCPP_EMPLACE_FRONT typename C::reference (C::*)(typename C::value_type&&)
+#else
+#   define PYCPP_EMPLACE_FRONT void (C::*)(typename C::value_type&&)
+#endif
+
+PYCPP_HAS_MEMBER_FUNCTION(emplace_front, has_emplace_front, PYCPP_EMPLACE_FRONT);
+#undef PYCPP_EMPLACE_FRONT
 
 
 /**
